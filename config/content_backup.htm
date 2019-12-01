@@ -594,9 +594,46 @@
 <h2>第五章</h2>
 <h2>第六章</h2>
 <h2>第七章</h2>
-<h2>第八章:有限元素分析</h2>
-<p></p>
-<h1>About</h1>
+<h2>第八章有限元素分析</h2>
+<p>有限元素分析<span>(FEA)</span>是一種實用的有限元素法<span>(FEM)</span>，它可以預測結構及流體中的壓力、熱量、震動和力量的反應行為，通常該行為從創作模型開始，接著將模型細分為相同的網狀幾何形狀且連結在特定節點上，其材料特性及邊界狀況適用於任意原件上。</p>
+<p>最後，如<span>NX12</span>軟體解決了<span>FEA</span>、輸出及可視化，這些東西幫助工程師在成品製作及測試過程前更進一步了解產品性能。</p>
+<p>FEA的應用包含了結構分析、熱分析、流體力學、和電磁兼容性，此外<span>FEA</span>也常被用來計算結構及固體力學的機械性能<span>(</span>應力和位移<span>)</span>，這些行為可用於預測機械硬體的損壞，在本章節我們將探討實體零件的結構應力和應變分析。</p>
+<p>總覽</p>
+<p>8-1元件形狀和節點</p>
+<p>可將元件中的維數及節點點數將元件分成不同類型，以下適用於離散化的某些函數類型。</p>
+<p> </p>
+<p>一維單元</p>
+<p> </p>
+<p> <img alt="" height="158" src="/images/one dimensional element.PNG" width="500"/></p>
+<p> </p>
+<p>二維單元</p>
+<p>三角形</p>
+<p> <img alt="" height="160" src="/images/two dimensional element -triangular.PNG" width="500"/></p>
+<p> </p>
+<p>四邊形</p>
+<p> <img alt="" height="169" src="/images/two dimensional element -quadrilateral.PNG" width="500"/></p>
+<p>三維單元</p>
+<p>四面體（具有四個三角形面的實體）</p>
+<p> </p>
+<p> <img alt="" height="175" src="/images/three dimensional elements -tetrahedral (a soild with triangular faces).PNG" width="500"/></p>
+<p> </p>
+<p>六面體（具有<span>6</span>個四邊形面的實體）</p>
+<p> <img alt="" height="166" src="/images/three dimensional element -hexahedral (a soild with 6 quadrilateral faces).PNG" width="500"/></p>
+<p>節點類型</p>
+<table width="557">
+<tbody>
+<tr>
+<td width="557"></td>
+</tr>
+</tbody>
+</table>
+<p>通常當有限元素質較小時<span>FEA</span>能有更精確的答案，但運算時間也會變得更長。</p>
+<p> 8-1-2解決步驟</p>
+<p>開始模擬<span>:</span>你可以在下列運算器中找到解決方法如NX Nastran, NX Nastran Acoustic, NX Nastran Vibro-Acoustic, NX Nastran Design, Samcef, NX Thermal/Flow, Simcenter Electronic Systems Cooling, Simcenter Space Systems Thermal, NX Multiphysics, Simcenter Acoustics BEM, MSC Nastran, Ansys, Abaqus, 和LS-DYNA，除此之外你可以選擇你要分析的形式，在這在本教程中只有結構分析將會被NX Nastran Design取代顯示</p>
+<p> 選擇材料特性<span>:</span>這允許你改變材料特性並將其分配給模型，如果我們使用鋼材製作葉倫，我們可以使用如密度、帕鬆比等材料特性，這些材料特性利於實驗室保存供未來使用，或是可以從材料庫中檢索。</p>
+<p> 施加應力<span>:</span>此舉可讓你施加不同類型的負載，如力量和壓力沿著固體作用方向和大小。</p>
+<p> </p>
+<p>應用邊界條件<span>:</span></p><h1>About</h1>
 <p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
 <h4>利用 cmsimde 建立靜態網誌方法:</h4>
 <p>1. 在 github 建立倉儲, git clone 到近端</p>
