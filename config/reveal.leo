@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
-<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
-	<global_window_position top="50" left="50" height="500" width="700"/>
-	<global_log_window_position top="0" left="0" height="0" width="0"/>
-</globals>
+<leo_header file_format="2"/>
+<globals/>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -13,28 +10,43 @@
 <v t="leo.20180902120538.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20180902120538.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20180902120523.1" a="E"><vh>編輯 reveal</vh>
-<v t="leo.20180902120523.2" a="E"><vh>@path ./../reveal</vh>
-<v t="leo.20180902120523.3" a="E"><vh>@clean index.html</vh>
-<v t="leo.20180902120523.4" a="E"><vh>html</vh>
+<v t="leo.20180902120523.1"><vh>編輯 reveal</vh>
+<v t="leo.20180902120523.2"><vh>@path ./../reveal</vh>
+<v t="leo.20180902120523.3"><vh>@clean index.html</vh>
+<v t="leo.20180902120523.4"><vh>html</vh>
 <v t="leo.20180902120523.5"><vh>head</vh></v>
-<v t="leo.20180902120523.6" a="E"><vh>body</vh>
-<v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
-<v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180902120523.6"><vh>body</vh>
+<v t="leo.20180902120523.7"><vh>reveal div</vh>
+<v t="leo.20180902120523.8"><vh>slides div</vh>
+<v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11" a="E"><vh>快捷鍵</vh>
+<v t="leo.20191212182509.1"><vh>Week10</vh>
+<v t="leo.20191212182509.2"><vh>投影片內容</vh></v>
+</v>
+<v t="leo.20191212182833.1"><vh>Week12</vh>
+<v t="leo.20191212182833.2"><vh>投影片內容</vh></v>
+</v>
+<v t="leo.20191212183626.1"><vh>Vrep</vh>
+<v t="leo.20191212183626.2"><vh>報告影片</vh></v>
+</v>
+<v t="leo.20191212183756.1"><vh>Webots-1</vh>
+<v t="leo.20191212183756.2"><vh>報告影片</vh></v>
+</v>
+<v t="leo.20191212183435.1"><vh>Week13</vh>
+<v t="leo.20191212183435.2"><vh>投影片內容</vh></v>
+</v>
+<v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20180902120523.16" a="E"><vh>導入縮排程式碼</vh>
+<v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
-<v t="leo.20180902120523.18" a="E"><vh>導入影片</vh>
+<v t="leo.20180902120523.18"><vh>導入影片</vh>
 <v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
@@ -48,18 +60,18 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
+<t tx="leo.20180902120523.10">## BG1 分組網際內容管理
 
-### KMOLab
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [BG1](https://github.com/s40723212/cad2019bg1)
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
+[個人倉儲](https://github.com/s40723212/cad2019bg1)
 
+[個人網站](https://s40723212.github.io/cad2019bg1/content/index.html)
 
-</t>
+[個人網誌](https://s40723212.github.io/cad2019bg1/blog/index.html)</t>
 <t tx="leo.20180902120523.11">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -326,5 +338,89 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20191212182509.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191212182509.2">## [Week10](https://s40723212.github.io/cad2019bg1/content/week10-14.html)
+
+* &lt;font size="7"&gt;組長創建倉儲,組員fork倉儲&lt;/font&gt;
+&lt;hr color="#ff8000"&gt;
+* &lt;font size="7"&gt;[繪圖軟體介紹](https://s40723212.github.io/cad2019bg1/content/week10-14.html) &lt;/font&gt;
+&lt;hr color="#ff8000"&gt;
+* &lt;font size="7"&gt;[各套繪圖軟體之差異及特點分析](https://s40723212.github.io/cad2019bg1/content/week10-14.html) &lt;/font&gt;</t>
+<t tx="leo.20191212182833.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191212182833.2">## [Week12](https://s40723212.github.io/cad2019bg1/content/week10-14.html)
+
+* &lt;font size="7"&gt;[組員分配整理NX電子書內容](https://s40723212.github.io/cad2019bg1/content/NX12%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8A.html)&lt;/font&gt;
+&lt;hr color="#ff8000"&gt;
+* &lt;font size="7"&gt;練習Webots與Vrep &lt;/font&gt;
+&lt;hr color="#ff8000"&gt;
+* &lt;font size="7"&gt;Webots與Vrep使用心得與比較差異&lt;/font&gt;
+
+
+
+</t>
+<t tx="leo.20191212183435.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191212183435.2">## [Week13](https://s40723212.github.io/cad2019bg1/content/week10-14.html)
+
+ &lt;font size="7"&gt;[組員分配整理NX電子書內容](https://s40723212.github.io/cad2019bg1/content/week10-14.html)&lt;/font&gt;
+
+
+
+</t>
+<t tx="leo.20191212183626.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191212183626.2">## Vrep bubbleRob外型設定
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gCgnIWXeeCw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
+<t tx="leo.20191212183756.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191212183756.2">## Webots Tutorial 1
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9_wb_nkoGU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
 </tnodes>
 </leo_file>
