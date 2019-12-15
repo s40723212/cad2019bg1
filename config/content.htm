@@ -1218,7 +1218,8 @@
 <p>千斤頂螺釘是一種通過轉動導螺桿來操作的千斤頂。 在這個練習中，要求您對零件進行建模，組裝和準備。 所有尺寸應以毫米為單位。 為每個創建單獨的草稿零件。 起草最終裝配並製作表格，列出每個人組件。 大會草案應有分解圖。</p>
 <p><img alt="" height="653" src="https://s40723234.github.io/cad2019/images/6.6.3.jpg" width="511"/></p>
 <p><img alt="" height="653" src="https://s40723234.github.io/cad2019/images/6.6.3.jpg" width="511"/></p>
-<h2>第七章 曲面建模</h2><h2>第八章有限元素分析</h2>
+<h2>第七章 曲面建模</h2><h2>第八章 有限元素分析</h2>
+<p><strong><big><big><big>Finite Element Analysis</big></big></big></strong></p>
 <p>有限元素分析<span>(FEA)</span>是一種實用的有限元素法<span>(FEM)</span>，它可以預測結構及流體中的壓力、熱量、震動和力量的反應行為，通常該行為從創作模型開始，接著將模型細分為相同的網狀幾何形狀且連結在特定節點上，其材料特性及邊界狀況適用於任意原件上。</p>
 <p>最後，如<span>NX12</span>軟體解決了<span>FEA</span>、輸出及可視化，這些東西幫助工程師在成品製作及測試過程前更進一步了解產品性能。</p>
 <p>FEA的應用包含了結構分析、熱分析、流體力學、和電磁兼容性，此外<span>FEA</span>也常被用來計算結構及固體力學的機械性能<span>(</span>應力和位移<span>)</span>，這些行為可用於預測機械硬體的損壞，在本章節我們將探討實體零件的結構應力和應變分析。</p>
@@ -1259,7 +1260,21 @@
 <p> 應用邊界條件 <span>: </span>簡單來說，邊界條件限制了元件在空間中的自由度，某些元件可以限制其旋轉運動爾，而某些可以限制其元件進行平移運動。</p>
 <p>網狀劃分實體<span>:</span>這用於將模型離散化為有限元素，通常我們選擇四面體形狀的原件進行近似值，取決於當時的狀況你仍然可以選擇<span>2-D</span>或是<span>1-D</span>的元件，方法是從下拉菜單中選擇這些選項。 </p>
 <p>解決方法和結論<span>:</span> 這是通過選定的求解器和上述所有選項所求得控制方程式的解，這樣可以解決問題並和得到分析結論。</p>
-<h2>第九章 製造</h2>
+<p><strong><big>葉輪(impeller)葉片</big></strong></p>
+<p>1.將檔案名稱設定為Impeller_impeller.prt</p>
+<p>2.將單位更改至英制單位</p>
+<p>3.設定草圖平面，並繪製兩點(0,0,0)及(11.75,6,0)</p>
+<p>4.繪製兩個半徑分別為1.5及0.5之圓弧在剛剛定義之兩點上</p>
+<p>5.繪製相交圓弧將這兩個圓弧相連，而這兩個圓弧之吋為15及18</p>
+<p>6.由路徑more/geimetic constrain/tangent定義曲線相交</p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/7H4GU7vrWkM" width="500"></iframe></p>
+<p><strong><big>錐形軸</big></strong></p>
+<p>1.建立新的模型將其檔名命名為 Impeller_shaft.prt，並將其單位制度改成英制</p>
+<p>2.選定基準面畫出<span>Ø4的圓，完成後按finsh鍵並長出高度18的圓柱</span></p>
+<p><span>3.依照路徑insert-desigh fecture -corn 完成Ø4*6*10之圓錐</span></p>
+<p><span>4.依照第一步驟完成Ø6*20之圓柱</span></p>
+<p><span>5.完成零件</span></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/23rPm6Es9BY" width="500"></iframe></p><h2>第九章 製造</h2>
 <h1>About</h1>
 <p>=======</p>
 <p>開始模擬<span>:</span>你可以在下列運算器中找到解決方法如NX Nastran, NX Nastran Acoustic, NX Nastran Vibro-Acoustic, NX Nastran Design, Samcef, NX Thermal/Flow, Simcenter Electronic Systems Cooling, Simcenter Space Systems Thermal, NX Multiphysics, Simcenter Acoustics BEM, MSC Nastran, Ansys, Abaqus, 和LS-DYNA，除此之外你可以選擇你要分析的形式，在這在本教程中只有結構分析將會被NX Nastran Design取代顯示</p>
