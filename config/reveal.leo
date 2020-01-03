@@ -33,8 +33,20 @@
 <v t="leo.20191212183756.1"><vh>Webots-1</vh>
 <v t="leo.20191212183756.2"><vh>報告影片</vh></v>
 </v>
-<v t="leo.20191212183435.1"><vh>Week13</vh>
-<v t="leo.20191212183435.2"><vh>投影片內容</vh></v>
+<v t="leo.20191215165014.1"><vh>Webots-2</vh>
+<v t="leo.20191215165014.2"><vh>報告影片</vh></v>
+</v>
+<v t="leo.20191215165016.1"><vh>Webots-3</vh>
+<v t="leo.20191215165016.2"><vh>報告影片</vh></v>
+</v>
+<v t="leo.20191215165017.1"><vh>Webots-4</vh>
+<v t="leo.20191215165017.2"><vh>報告影片</vh></v>
+</v>
+<v t="leo.20191215165019.1"><vh>Webots-5</vh>
+<v t="leo.20191215165019.2"><vh>報告影片</vh></v>
+</v>
+<v t="leo.20191215165021.1"><vh>Webots-6</vh>
+<v t="leo.20191215165021.2"><vh>報告影片</vh></v>
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
@@ -182,7 +194,7 @@ make.start()
 <t tx="leo.20180902120523.5">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;title&gt;
-CMSimfly 網際內容管理
+cad2019-bg1 final reveal
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
@@ -374,22 +386,6 @@ vertical: body pane on the botton</t>
 
 
 </t>
-<t tx="leo.20191212183435.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191212183435.2">## [Week13](https://s40723212.github.io/cad2019bg1/content/week10-14.html)
-
- &lt;font size="7"&gt;[組員分配整理NX電子書內容](https://s40723212.github.io/cad2019bg1/content/week10-14.html)&lt;/font&gt;
-
-
-
-</t>
 <t tx="leo.20191212183626.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -418,6 +414,85 @@ vertical: body pane on the botton</t>
 <t tx="leo.20191212183756.2">## Webots Tutorial 1
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9_wb_nkoGU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
+<t tx="leo.20191215165014.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191215165014.2">## Webots Tutorial 2
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6cRF1jS2Fwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
+<t tx="leo.20191215165016.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191215165016.2">## Webots Tutorial 3
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_mEsiBU9LPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
+<t tx="leo.20191215165017.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191215165017.2">## Webots Tutorial 4
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/GlJ_y--w00A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
+<t tx="leo.20191215165019.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191215165019.2">## Webots Tutorial 5
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/uM78CW-jbSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+</t>
+<t tx="leo.20191215165021.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191215165021.2">## Webots Tutorial 6
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Z6ASNLCNGLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 
 
