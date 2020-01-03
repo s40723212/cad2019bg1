@@ -51,7 +51,19 @@
 <h3>高永霖&amp;顏士勛</h3>
 <h3>洪維辰</h3>
 <h3>劉冠志</h3>
-<h3>曾信誠</h3>
+<h5><strong>Building the dynamic shapes</strong></h5>
+<h5><strong>建立動態形狀</strong></h5>
+<p><strong>If we want our robot to be dynamically enabled, i.e. react to collisions, fall, etc., then we need to create/configure the shapes appropriately: a shape can be:</strong></p>
+<p><strong>如果我們希望我們的機器人能夠動態啟用，即對碰撞，跌落等做出反應，那麼我們需要適當地創建/配置形狀：形狀可以是：</strong></p>
+<ul>
+<li><strong>dynamic or static: a dynamic (or non-static) shape will fall and be influences by external forces/torques. A static (or non-dynamic) shape on the other hand, will stay in place, or follow the movement of its parent in the scene hierarchy.<br/></strong></li>
+<li><strong>動態或靜態：動態（或非靜態）形狀會掉落並受到外力/扭矩的影響。 另一方面，靜態（或非動態）形狀將保持不變，或跟隨其父級在場景層次中的移動。</strong></li>
+<li><strong>respondable or non-respondable: a respondable shape will cause a collision reaction with other respondable shapes. They (and/or) their collider, will be influenced in their movement if they are dynamic. On the other hand, non-respondable shapes will not compute a collision response if they collide with other shapes.</strong></li>
+<li><strong>可響應或不可響應：可響應形狀會引起與其他可響應形狀的碰撞反應。 如果它們是動態的，它們（和/或它們的對撞機）的運動將受到影響。 另一方面，不負責任的形狀如果與其他形狀發生碰撞，則不會計算碰撞響應。</strong></li>
+</ul>
+<p><strong>Above two points are illustrated here. Respondable shapes should be as simple as possible, in order to allow for a fast and stable simulation. A physics engine will be able to simulate following 5 types of shapes with various degrees of speed and stability:</strong></p>
+<p><strong>以上說明了兩點。 負責任的形狀應盡可能簡單，以實現快速穩定的仿真。 物理引擎將能夠以不同的速度和穩定性模擬以下5種類型的形狀：</strong></p>
+<p><strong> </strong></p><h3>曾信誠</h3>
 <p></p>
 <h1>繪圖軟體</h1>
 <p>solvespace</p>
