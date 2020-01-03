@@ -43,6 +43,26 @@
 <p><strong>操作影片:<br/><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/gCgnIWXeeCw" width="560"></iframe></strong><strong><br/></strong><br/>1.開啟V-rep，點選新增球體(Menu-add-Primitive shape-Sphere)，並給予球體尺寸(X-size為0.2)<br/>2.點選crtl+space會開始模擬。<br/>3.利用crtl+C.crtl+V複製一樣的球，接著按crtl+space做碰撞測試，會看到兩顆球彈走。<br/>4.再來要將球體新增外觀及功能。<br/>5.點選球體，並點選平移，在Z軸上輸入0.02後，點選平移按鈕，會看到球體上升。<br/>(Sphere-Object/item shift-translation-Z 0.02-Translate selection)<br/>6.點選左邊場景結構中的球體，並改名為bubbleRob。<br/>7.新增感測器在球體上(Menu-add-Proximity sensor- Cone type)<br/>8.點選感測器，並點選旋轉，在Y軸及Z軸上輸入90，點選選轉扭，更改感測器角度。<br/>(Proximity sensor-Object/item rotate-Rotation-Y 90. Z 90.-Rotate selection)<br/>9.點選感測器，並點選平移，在X軸輸入0.1;Z軸輸入0.12,更改感測器位置。<br/>(Proximity sensor-Object/item shift-translation-X 0.1. Z 0.12.-Translate selection)<br/>10.雙擊左邊場景結構中的感測器，並點擊顯示體積參數(Show volume parameter )，將偏移量(Offest)改為0.005，角度(Angle)改為30，範圍(Range)改為0.15。<br/>11.點擊顯示檢測參數(Show detection parameters),並取消不允許檢測之項目(item Don't allow detections)。<br/>12.點選左邊場景結構中的感測器，並改名為bubbleRob_sensingNose。<br/>13.選取球體與感測，並點選編輯中的Make last selected object parent，使球體與感測器結合。<br/>14.再來將球體加上輪子，新增一個尺寸為0.08x0.08x0.02的圓柱，並設定圓柱的位置（0.05,0.1,0.04），完成後將其X軸方向選轉90度。<br/>15.將輪子命名為bubbleRob_leftWheel，並複製一個命名為bubbleRob_rightWheel，將Y軸座標側為-0.1。<br/>16.接著新增馬達(Menu bar-Add-Joint-Revolute)，將馬達位置調至輪子中心，並命名為bubbleRob_leftMotor。<br/>17.雙擊馬達，點選Show dynamics properties dialog，並勾選Motor enabled及Lock motor when target velocity is zero。<br/>18.以相同步驟完成bubbleRob_rightMotor。<br/>19.將馬達固定在輪子上，並將馬達固定在球體上。<br/>20.新增第三支撐點(直徑0.05的球體)，並平移球體X-0.07，完成後命名為bubbleRob_slider。<br/>21.新增傳動器(Menu bar-Add-Force sensor)，並設定位置X -0.07. Z 0.05.，完成後命名為bubbleRob_connection。<br/>22.將傳動器與支撐點連接，並跟主體連接，即完成外型設定。</p>
 <p><big><big><big><strong>Week13</strong></big></big></big></p>
 <p><strong>13周組員報告影片<br/><br/></strong><strong>40723227 許博閔 <br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q_6HhBJ4k20" width="560"></iframe><br/></strong></p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<h2>week15-16</h2>
+<h2>week17協同任務</h2>
+<h3>高永霖&amp;顏士勛</h3>
+<h3>洪維辰</h3>
+<h3>劉冠志</h3>
+<h5><strong>Building the dynamic shapes</strong></h5>
+<h5><strong>建立動態形狀</strong></h5>
+<p><strong>If we want our robot to be dynamically enabled, i.e. react to collisions, fall, etc., then we need to create/configure the shapes appropriately: a shape can be:</strong></p>
+<p><strong>如果我們希望我們的機器人能夠動態啟用，即對碰撞，跌落等做出反應，那麼我們需要適當地創建/配置形狀：形狀可以是：</strong></p>
+<ul>
+<li><strong>dynamic or static: a dynamic (or non-static) shape will fall and be influences by external forces/torques. A static (or non-dynamic) shape on the other hand, will stay in place, or follow the movement of its parent in the scene hierarchy.<br/></strong></li>
+<li><strong>動態或靜態：動態（或非靜態）形狀會掉落並受到外力/扭矩的影響。 另一方面，靜態（或非動態）形狀將保持不變，或跟隨其父級在場景層次中的移動。</strong></li>
+<li><strong>respondable or non-respondable: a respondable shape will cause a collision reaction with other respondable shapes. They (and/or) their collider, will be influenced in their movement if they are dynamic. On the other hand, non-respondable shapes will not compute a collision response if they collide with other shapes.</strong></li>
+<li><strong>可響應或不可響應：可響應形狀會引起與其他可響應形狀的碰撞反應。 如果它們是動態的，它們（和/或它們的對撞機）的運動將受到影響。 另一方面，不負責任的形狀如果與其他形狀發生碰撞，則不會計算碰撞響應。</strong></li>
+</ul>
+<p><strong>Above two points are illustrated here. Respondable shapes should be as simple as possible, in order to allow for a fast and stable simulation. A physics engine will be able to simulate following 5 types of shapes with various degrees of speed and stability:</strong></p>
+<p><strong>以上說明了兩點。 負責任的形狀應盡可能簡單，以實現快速穩定的仿真。 物理引擎將能夠以不同的速度和穩定性模擬以下5種類型的形狀：</strong></p>
+<p><strong> </strong></p><h3>曾信誠</h3>
+=======
 <p><big><big><big>Week14</big></big></big></p>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-1-modification-of-the-environment" target="_blank">Webots tutorial 1</a></p>
 <p><span>本章節是讓你熟悉webot介面及操作，你將會創造一個虛擬空間包含了地板、牆壁， e-puck 機器人( e-puck robot )及 e-puck robot 控制系統。</span></p>
@@ -92,6 +112,7 @@
 <p><big><big><big><big>week17協同任務</big></big></big></big></p>
 <h3>Building a clean model tutorial</h3><h3>webots translation</h3>
 <p></p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 7c4faafec90d523d03f318e510f7d5d2fe1a8a66
 <p></p>
 <p><br/>Webots  translation<img caption="false" height="122" src="/images/webots 2-1.PNG" width="1000"/></p>
 <p>第一步驟:確認你的<span>my_first_simulation.wbt檔案已經開啟，接著停止你的模擬時間，並將my_first_simulation.wbt另存新檔成obstacles.wbt</span></p><p>A New Simulation</p>
@@ -982,7 +1003,11 @@
 <p><img alt="" height="459" src="/images/136.jpg" width="696"/></p>
 <p><img alt="" height="202" src="/images/137.jpg" width="294"/><img alt="" height="261" src="/images/138.jpg" width="424"/></p>
 <p></p>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<h2>第五章</h2>
+=======
 <h2>第五章 零件組合</h2>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 7c4faafec90d523d03f318e510f7d5d2fe1a8a66
 <p>NX 12 Drafting應用程序使您可以創建工程圖，視圖，幾何形狀，尺寸和起草製造所需的註釋以及對工業設計的理解。本章的目的是為設計人員/製圖員提供有關起草工具的足夠知識，以便創建其設計的基本圖紙。製圖應用程序支持工程製圖符合ANSI標準的模型。在解釋了起草申請的基礎之後，我們將逐步介紹起草一些先前創建的模型的方法。</p>
 <p>5-1總覽</p>
 <p>製圖應用程序旨在允許您制定和維護行業標準直接從3D模型或裝配零件製造工程圖。Drafting應用程序提供了一組2D繪圖，滿足2D中心設計和佈局要求的工具。可以製作獨立的2D工程圖。繪圖應用程序基於如下圖所示的實體模型創建視圖。通過繪圖，可以輕鬆地創建具有正交視圖，剖面圖，導入視圖，輔助視圖，尺寸和其他註釋。</p>
