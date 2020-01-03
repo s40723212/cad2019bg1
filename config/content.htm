@@ -45,8 +45,13 @@
 <p><strong>V-rep bubbleRob外型設定<br/></strong></p>
 <p><strong>操作影片:<br/><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/gCgnIWXeeCw" width="560"></iframe></strong><strong><br/></strong><br/>1.開啟V-rep，點選新增球體(Menu-add-Primitive shape-Sphere)，並給予球體尺寸(X-size為0.2)<br/>2.點選crtl+space會開始模擬。<br/>3.利用crtl+C.crtl+V複製一樣的球，接著按crtl+space做碰撞測試，會看到兩顆球彈走。<br/>4.再來要將球體新增外觀及功能。<br/>5.點選球體，並點選平移，在Z軸上輸入0.02後，點選平移按鈕，會看到球體上升。<br/>(Sphere-Object/item shift-translation-Z 0.02-Translate selection)<br/>6.點選左邊場景結構中的球體，並改名為bubbleRob。<br/>7.新增感測器在球體上(Menu-add-Proximity sensor- Cone type)<br/>8.點選感測器，並點選旋轉，在Y軸及Z軸上輸入90，點選選轉扭，更改感測器角度。<br/>(Proximity sensor-Object/item rotate-Rotation-Y 90. Z 90.-Rotate selection)<br/>9.點選感測器，並點選平移，在X軸輸入0.1;Z軸輸入0.12,更改感測器位置。<br/>(Proximity sensor-Object/item shift-translation-X 0.1. Z 0.12.-Translate selection)<br/>10.雙擊左邊場景結構中的感測器，並點擊顯示體積參數(Show volume parameter )，將偏移量(Offest)改為0.005，角度(Angle)改為30，範圍(Range)改為0.15。<br/>11.點擊顯示檢測參數(Show detection parameters),並取消不允許檢測之項目(item Don't allow detections)。<br/>12.點選左邊場景結構中的感測器，並改名為bubbleRob_sensingNose。<br/>13.選取球體與感測，並點選編輯中的Make last selected object parent，使球體與感測器結合。<br/>14.再來將球體加上輪子，新增一個尺寸為0.08x0.08x0.02的圓柱，並設定圓柱的位置（0.05,0.1,0.04），完成後將其X軸方向選轉90度。<br/>15.將輪子命名為bubbleRob_leftWheel，並複製一個命名為bubbleRob_rightWheel，將Y軸座標側為-0.1。<br/>16.接著新增馬達(Menu bar-Add-Joint-Revolute)，將馬達位置調至輪子中心，並命名為bubbleRob_leftMotor。<br/>17.雙擊馬達，點選Show dynamics properties dialog，並勾選Motor enabled及Lock motor when target velocity is zero。<br/>18.以相同步驟完成bubbleRob_rightMotor。<br/>19.將馬達固定在輪子上，並將馬達固定在球體上。<br/>20.新增第三支撐點(直徑0.05的球體)，並平移球體X-0.07，完成後命名為bubbleRob_slider。<br/>21.新增傳動器(Menu bar-Add-Force sensor)，並設定位置X -0.07. Z 0.05.，完成後命名為bubbleRob_connection。<br/>22.將傳動器與支撐點連接，並跟主體連接，即完成外型設定。</p>
 <p><big><big><big><strong>Week13</strong></big></big></big></p>
-<p><strong>13周組員報告影片<br/><br/></strong><strong>40723227 許博閔 <br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q_6HhBJ4k20" width="560"></iframe><br/></strong></p><h2>week15-16</h2>
-<h2>week17-18</h2>
+<p><strong>13周組員報告影片<br/><br/></strong><strong>40723227 許博閔 <br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q_6HhBJ4k20" width="560"></iframe><br/></strong></p>
+<h2>week15-16</h2>
+<h2>week17協同任務</h2>
+<h3>高永霖&amp;顏士勛</h3>
+<h3>洪維辰</h3>
+<h3>劉冠志</h3>
+<h3>曾信誠</h3>
 <p></p>
 <h1>繪圖軟體</h1>
 <p>solvespace</p>
@@ -56,7 +61,8 @@
 <p>Creo</p>
 <p>各套繪圖軟體之差異及特點分析</p>
 <p></p>
-<p></p><h2>Solvespace</h2>
+<p></p>
+<h2>Solvespace</h2>
 <h3>Solvespace功能表說明</h3>
 <p><strong>Sketch 草圖</strong></p>
 <p><strong><img alt="" height="307" src="https://s40723227.github.io/cad2019/images/%E8%8D%89%E5%9C%96.png" width="524"/></strong></p>
@@ -933,7 +939,8 @@
 <p>如以下最終模型所示，在拐角處添加邊緣融合。 保持混合值的外邊緣為10半徑，內邊緣為5mm半徑。</p>
 <p><img alt="" height="459" src="/images/136.jpg" width="696"/></p>
 <p><img alt="" height="202" src="/images/137.jpg" width="294"/><img alt="" height="261" src="/images/138.jpg" width="424"/></p>
-<p></p><h2>第五章</h2>
+<p></p>
+<h2>第五章</h2>
 <p>NX 12 Drafting應用程序使您可以創建工程圖，視圖，幾何形狀，尺寸和起草製造所需的註釋以及對工業設計的理解。本章的目的是為設計人員/製圖員提供有關起草工具的足夠知識，以便創建其設計的基本圖紙。製圖應用程序支持工程製圖符合ANSI標準的模型。在解釋了起草申請的基礎之後，我們將逐步介紹起草一些先前創建的模型的方法。</p>
 <p>5-1總覽</p>
 <p>製圖應用程序旨在允許您制定和維護行業標準直接從3D模型或裝配零件製造工程圖。Drafting應用程序提供了一組2D繪圖，滿足2D中心設計和佈局要求的工具。可以製作獨立的2D工程圖。繪圖應用程序基於如下圖所示的實體模型創建視圖。通過繪圖，可以輕鬆地創建具有正交視圖，剖面圖，導入視圖，輔助視圖，尺寸和其他註釋。</p>
