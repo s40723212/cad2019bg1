@@ -1,0 +1,246 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cad2019-bg1期末報告</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cad2019-bg1期末分組網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cad2019-bg1期末分組網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='weeks.html'>weeks</a><ul class='dropdown'><li><a href='week10-14.html'>week10-14</a><li><a href='week15-16.html'>week15-16</a><li class='has-children'><a href='week17協同任務.html'>week17協同任務</a><ul class='dropdown'><li><a href='高永霖&顏士勛.html'>高永霖&顏士勛</a><li><a href='洪維辰.html'>洪維辰</a><li><a href='劉冠志.html'>劉冠志</a><li><a href='曾信誠.html'>曾信誠</a></li></ul><li><a href='week18.html'>week18</a></li></ul><li class='has-children'><a href='繪圖軟體.html'>繪圖軟體</a><ul class='dropdown'><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='Solvespace功能表說明.html'>Solvespace功能表說明</a><li><a href='實作影片.html'>實作影片</a></li></ul><li class='has-children'><a href='Solidworks.html'>Solidworks</a><ul class='dropdown'><li><a href='Solidworks開發緣起.html'>Solidworks開發緣起</a><li><a href='Solidworks套件安裝與流程設定.html'>Solidworks套件安裝與流程設定</a></li></ul><li class='has-children'><a href='NX.html'>NX</a><ul class='dropdown'><li><a href='NX開發起源.html'>NX開發起源</a><li><a href='NX套件安裝與設定流程.html'>NX套件安裝與設定流程</a></li></ul><li class='has-children'><a href='Inventor.html'>Inventor</a><ul class='dropdown'><li><a href='Inventor開發起源.html'>Inventor開發起源</a><li><a href='Inventor套件安裝與設定流程.html'>Inventor套件安裝與設定流程</a></li></ul><li class='has-children'><a href='Creo (ProE).html'>Creo (ProE)</a><ul class='dropdown'><li><a href='Creo (ProE)開發起源.html'>Creo (ProE)開發起源</a><li><a href='Creo (ProE)套件安裝與設定流程.html'>Creo (ProE)套件安裝與設定流程</a></li></ul><li><a href='各套繪圖軟體之差異及特點分析.html'>各套繪圖軟體之差異及特點分析</a></li></ul><li class='has-children'><a href='NX12使用手冊.html'>NX12使用手冊</a><ul class='dropdown'><li><a href='第一章 簡介.html'>第一章 簡介</a><li><a href='第二章 入門教學.html'>第二章 入門教學</a><li><a href='第三章 2D草圖.html'>第三章 2D草圖</a><li><a href='第四章 三維建模.html'>第四章 三維建模</a><li><a href='第五章 零件組合.html'>第五章 零件組合</a><li><a href='第六章 部件建模.html'>第六章 部件建模</a><li><a href='第七章 曲面建模.html'>第七章 曲面建模</a><li><a href='第八章 有限元素分析.html'>第八章 有限元素分析</a><li><a href='第九章 製造.html'>第九章 製造</a></li></ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">劉冠志 << <a href='劉冠志.html'>Previous</a> <a href='week18.html'>Next</a> >> week18<br /><h1>曾信誠</h1>
+<p>=======</p>
+<p><big><big><big>Week14</big></big></big></p>
+<p><a href="https://cyberbotics.com/doc/guide/tutorial-1-modification-of-the-environment" target="_blank">Webots tutorial 1</a></p>
+<p><span>本章節是讓你熟悉webot介面及操作，你將會創造一個虛擬空間包含了地板、牆壁， e-puck 機器人( e-puck robot )及 e-puck robot 控制系統。</span></p>
+<p><b>操作影片:</b></p>
+<p><b><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/9_wb_nkoGU8" width="560"></iframe></b></p>
+<p>1.開啟Webots，創建一個新的世界，並將檔名改為<span>my_first_simulation。<br/>2.更改場地尺寸及牆的高度。<br/>3.加入木箱，並更改木箱尺寸與初始高度。<br/>4.利用ctrl+C.ctrl+V複製出三個箱子，以shift+滑鼠左鍵拖移，完成後存儲。<br/>5.加入一台機器，加入後儲存，再按開始鍵，檢查機器是否作動。<br/>6.進行物理施壓測試，使用Alt+滑鼠左鍵拖移機器。<br/>7.使用Alt+滑鼠左鍵拖移木箱，會發現木箱無法拖移，需給予木箱重量才能拖移。<br/>8.更改效能。<br/>9.創建控制程式，點選python，並命名為e-puck_go_forward。<br/>10.更改程式碼後存儲，進行測試。<br/>11.測試完後，即完成。</span></p>
+<p><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment" target="_blank">Webots tutorial 2</a> </p>
+<p>在本教程中你將學到如何在一般環境下新增簡單物件，第一步驟你將新增一個能與你被景互動的球體。我們將處理幾個有關節點的概念，如他們各自代表的意義、如何新增他們，及如何加入關聯性等等.....，此外我們將學到如何設定物理量。</p>
+<p>數種節點將會被介紹，它們的細節都可以在手冊中找到，擁有節點圖表將有助於理解節點之間的關係。</p>
+<p>實心節點(solid node)代表鋼體，而這物體可忽略他的行變，在鋼體中任意兩點之距離不受外力影響改變距離，如機械指骨、輪子、桌子都是鋼體的代表。軟體(soft  bodies)及關節物體都不屬於鋼體，如繩索，輪胎，海綿或關節機械臂。但是，可以將一個鉸接的物體分解為幾個剛體。</p>
+<p>在webots物理引擎中是設計只用來模擬鋼體，在模擬設計中，最重要的一步為將各種實體拆解成不同的鋼體。</p>
+<p>第一步驟:將課程一<span>my_first_simulation.wbt檔案使用File / Save World As...另存成檔名為obstacles.wbt</span></p>
+<p>第二步驟:使用Delt將原本的背景移除，並使用<span>PROTO nodes (Webots Projects) / objects / floors / Floor (Solid)新增場景。</span></p>
+<p>第三步驟:<span>將新建場景之尺寸更改為1*1</span></p>
+<p>第四步驟:在最後的節點中依照Add/Bases nodes/solid路徑新增solid節點，展開solid節點並在solid節點中的children資料夾中新增shape，選擇<span>appearance並加入PBRAppearance</span></p>
+<p>1.在geometry中新增sphere</p>
+<p>2.展開<span>PBRAppearance，並將其mentalness及roughness尺寸分別更改成0、1</span></p>
+<p><span>3.在boundingObjectv新增sphere</span></p>
+<p><span>4.在physis中新增physis</span></p>
+<p><span>5.將translation 資料夾中的尺寸更改為0,0.2-0.2</span></p>
+<p><span>6.儲存</span></p>
+<p>7.結果顯示如下圖所示</p>
+<p><img alt="" height="323" src="https://s40723212.github.io/cad2019/images/tutorial%202-1.PNG" width="600"/></p>
+<p>第五步驟:在任意sphere節點中將radius及subdivision的尺寸更改成0.05和2</p>
+<p><img alt="" height="322" src="https://s40723212.github.io/cad2019/images/tutorial%202-2.PNG" width="600"/></p>
+<p>第六步驟:選擇第一個sphere(位於children中的子目錄)，檔案編輯器將會允許你輸入DEF</p>
+<p>1.在這個資料夾中輸入BALL_GEOMETRY</p>
+<p>2.選擇bounding0ject資料夾(位於第二個sphere節點中)並使用滑鼠右鍵中的Delt清空資料夾中的內容。</p>
+<p>3.在<span>bounding0ject資料夾中依照路徑Add/use/BALL_GEOMETRY操作。</span></p>
+<p><span>4.成果如下圖所示</span></p>
+<p><span><img alt="" height="338" src="https://s40723212.github.io/cad2019/images/tutorial%202-3.PNG" width="600"/></span></p>
+<p><span>Tutorial two (</span><span lang="en" tabindex="0">Physical properties Walls</span><span>)</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/cuIcd_KHkEk" width="560"></iframe></span></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-3-modification-of-the-environment" target="_blank">Webots tutorial 3</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/_mEsiBU9LPM" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 2的檔案，並另存為appearance.wbt。<br/>2.修改牆壁的外觀，在第一面牆的Appearance中的baseColor改成藍色.metalness改0.roughness改為0.5(若use-der機制有完成設定，其餘3面也會更著變動)。<br/>3.將球體新增紋路，在Appearance的baseColorMap中新增ImageTexture。<br/>4.在ImageTexture的url新增WEBOTS_HOME / projects / default / worlds / textures / red_brick_wall.jpg 路徑下的圖片。<br/>5.可使用View / Wireframe Rendering菜單項以線框模式查看仿真和恢復純渲染模式：View / Plain Rendering。<br/>6.查看坐標系：View / Optional Rendering / Show Coordinates System (Ctrl + F1)。<br/>7.查看距離傳感器的光線：View / Optional Rendering / Show DistanceSensor Rays (Ctrl + F10)。</p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-4-modification-of-the-environment" target="_blank">Webots tutorial 4</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/GlJ_y--w00A" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 3的檔案，並另存為collision_avoidance.wbt。<br/>2.新增一個控制程式碼檔案，並命名為e-puck_avoid_collision。<br/>3.進行自動迴避程式碼加入。<br/>4.複製程式碼並貼上，存儲後執行，能看到機器自動迴避。</p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-5-modification-of-the-environment" target="_blank">Webots tutorial 5</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/uM78CW-jbSg" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 4的檔案，並另存為compound_solid.wbt。<br/>2.新增啞鈴，先新增Solid，並def為dumbbell。<br/>3.在physics中新增Physics，接著在children中新增Group，並在Group中的children新增Shape兩個Transform。<br/>4.在Shape中的geometry新增cylinder，並將height改為0.1及radius改為0.01。<br/>5.接著在Transform中的children新增Shape，並在底下的geometry新增Sphere，然後將底下的radius改為0.03。<br/>6.將Transform底下的translation Y軸改為0.05。<br/>7.依相同方式完成另一個Transform，並將translation Y軸改為-0.05。<br/>8.接著使用def-use機制將Group def GO，並將boundimgObject新增use GO。<br/>9.接著調整啞鈴的物理性質，將phusics中的mass改為2及density改為-1.centerOfMass Y軸改為0.01。<br/>10.調整啞鈴位置，將rotation中的數值改為(1,0,0,1.5708)，且translation Y軸改為0.03。<br/>11.接著設定啞鈴的物理屬性，將Worldlnfo中的contactProperties新增ContactProperties，並將底下的coulombFriction改為0。<br/>12.接著將material1和material2改為dumbbell。<br/>13.設定完測試，即完成。</p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-6-modification-of-the-environment" target="_blank">Webots tutorial 6</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/Z6ASNLCNGLQ" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 5的檔案，將箱子.機器.球.啞鈴刪除後，另存為4_wheels_robot.wbt。<br/>2.新增Robot，並將底下的physics加入Physics。<br/>3.在Robot下的children中新增Shape，並def BODY。<br/>4.將Robot下的boundingObject中新增use BODY。<br/>5.接著將Shape下的geometry新增Box，並將尺寸定為(0.1,0.05,0.2)。<br/>6.接著將Shape下的appearance新增PBRAppearance，並將顏色改為紅色.metalness改為0。<br/>7.在Robot下的children中新增Hingejoint(複製三個)，並在底下的jointParameter中新增HingeJointParameter。<br/>8.接著在Hingejoint中的device新增RotationalMotor，並且在Hingejoint中的endPoint新增Soild。<br/>9.將Soild def WHEEL1，並在底下的children新增Shape，且def WHEEL。<br/>10.在endPoint底下的physics加入Physics，並def WHEEL_PH。<br/>11.接著在Shape下的geometry中新增Cylinder，並在Shape下的appearance新增PBRAppearance。<br/>12.將appearance中的顏色改為綠色.metalness改為0。<br/>13.接著調整軸心位置，將geometry中的radius改為0.04.height改為0.02。<br/>14.將Hingejoint下的boundingObject新增use WHEEL，並將endPoint下的name改為wheel1。<br/>15.調整輪胎位置，將translation中的數值調為(0.06,0,0.05)，並將rotation的數值調為(0,0,1,1.5708)。<br/>16.接著將HingeJointParameter下的anchor中的數值調為(0.06,0,0.05)。<br/>17.將RotationalMotor中的name改為wheel1。<br/>18.接著將其餘三個輪胎的數值改動.名稱改動，並用use-der機制完成。<br/>19.新增感測器，在Robot下的children中新增DistanceSensor,並在DistanceSensor下的children新增Shape。<br/>20.接著在Shape下的geometry新增Box.appearance新增PBRAppearance，並將appearance下的metalness改為0.顏色改為藍色。<br/>21.接著更改大小,將geometry中的size數值改為(0.01,0.01,0.01)。<br/>22.接著更改感測器位置，將DistanceSensor下的translation中的數值改為(0.03,0,0.1)，並且將rotation中的數值改為(0,1,0,0.3)。<br/>23.接著複製感測器，將其translation中的數值改為(-0.03,0,0.1).rotation中的數值改為(0,1,0,-1.8)。<br/>24.將感測器的name改為ds_left及ds_right，並將調整Robot高度為(0,0.05,0)，完成設定後存儲。<br/>25.接著加入程式碼，選擇Python，並命名為4_wheels_collision_avoidance。<br/>26.複製程式碼貼上並存儲，並且將conteoller選用4_wheels_collision_avoidance。<br/>27.接著開始模擬，運作正常及完成。</p>
+<br />劉冠志 << <a href='劉冠志.html'>Previous</a> <a href='week18.html'>Next</a> >> week18</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
