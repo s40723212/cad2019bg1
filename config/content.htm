@@ -44,7 +44,53 @@
 <p><strong>操作影片:<br/><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/gCgnIWXeeCw" width="560"></iframe></strong><strong><br/></strong><br/>1.開啟V-rep，點選新增球體(Menu-add-Primitive shape-Sphere)，並給予球體尺寸(X-size為0.2)<br/>2.點選crtl+space會開始模擬。<br/>3.利用crtl+C.crtl+V複製一樣的球，接著按crtl+space做碰撞測試，會看到兩顆球彈走。<br/>4.再來要將球體新增外觀及功能。<br/>5.點選球體，並點選平移，在Z軸上輸入0.02後，點選平移按鈕，會看到球體上升。<br/>(Sphere-Object/item shift-translation-Z 0.02-Translate selection)<br/>6.點選左邊場景結構中的球體，並改名為bubbleRob。<br/>7.新增感測器在球體上(Menu-add-Proximity sensor- Cone type)<br/>8.點選感測器，並點選旋轉，在Y軸及Z軸上輸入90，點選選轉扭，更改感測器角度。<br/>(Proximity sensor-Object/item rotate-Rotation-Y 90. Z 90.-Rotate selection)<br/>9.點選感測器，並點選平移，在X軸輸入0.1;Z軸輸入0.12,更改感測器位置。<br/>(Proximity sensor-Object/item shift-translation-X 0.1. Z 0.12.-Translate selection)<br/>10.雙擊左邊場景結構中的感測器，並點擊顯示體積參數(Show volume parameter )，將偏移量(Offest)改為0.005，角度(Angle)改為30，範圍(Range)改為0.15。<br/>11.點擊顯示檢測參數(Show detection parameters),並取消不允許檢測之項目(item Don't allow detections)。<br/>12.點選左邊場景結構中的感測器，並改名為bubbleRob_sensingNose。<br/>13.選取球體與感測，並點選編輯中的Make last selected object parent，使球體與感測器結合。<br/>14.再來將球體加上輪子，新增一個尺寸為0.08x0.08x0.02的圓柱，並設定圓柱的位置（0.05,0.1,0.04），完成後將其X軸方向選轉90度。<br/>15.將輪子命名為bubbleRob_leftWheel，並複製一個命名為bubbleRob_rightWheel，將Y軸座標側為-0.1。<br/>16.接著新增馬達(Menu bar-Add-Joint-Revolute)，將馬達位置調至輪子中心，並命名為bubbleRob_leftMotor。<br/>17.雙擊馬達，點選Show dynamics properties dialog，並勾選Motor enabled及Lock motor when target velocity is zero。<br/>18.以相同步驟完成bubbleRob_rightMotor。<br/>19.將馬達固定在輪子上，並將馬達固定在球體上。<br/>20.新增第三支撐點(直徑0.05的球體)，並平移球體X-0.07，完成後命名為bubbleRob_slider。<br/>21.新增傳動器(Menu bar-Add-Force sensor)，並設定位置X -0.07. Z 0.05.，完成後命名為bubbleRob_connection。<br/>22.將傳動器與支撐點連接，並跟主體連接，即完成外型設定。</p>
 <hr/>
 <p><big><big><big><strong>Week13</strong></big></big></big></p>
-<p><strong>13周組員報告影片<br/><br/></strong><strong>40723227 許博閔 <br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q_6HhBJ4k20" width="560"></iframe><br/></strong></p><h2>week15-16</h2>
+<p><strong>13周組員報告影片<br/><br/></strong><strong>40723227 許博閔 <br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q_6HhBJ4k20" width="560"></iframe></strong></p>
+<p><big><big><big>Week14</big></big></big></p>
+<p><a href="https://cyberbotics.com/doc/guide/tutorial-1-modification-of-the-environment" target="_blank">Webots tutorial 1</a></p>
+<p><span>本章節是讓你熟悉webot介面及操作，你將會創造一個虛擬空間包含了地板、牆壁， e-puck 機器人( e-puck robot )及 e-puck robot 控制系統。</span></p>
+<p><b>操作影片:</b></p>
+<p><b><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/9_wb_nkoGU8" width="560"></iframe></b></p>
+<p>1.開啟Webots，創建一個新的世界，並將檔名改為<span>my_first_simulation。<br/>2.更改場地尺寸及牆的高度。<br/>3.加入木箱，並更改木箱尺寸與初始高度。<br/>4.利用ctrl+C.ctrl+V複製出三個箱子，以shift+滑鼠左鍵拖移，完成後存儲。<br/>5.加入一台機器，加入後儲存，再按開始鍵，檢查機器是否作動。<br/>6.進行物理施壓測試，使用Alt+滑鼠左鍵拖移機器。<br/>7.使用Alt+滑鼠左鍵拖移木箱，會發現木箱無法拖移，需給予木箱重量才能拖移。<br/>8.更改效能。<br/>9.創建控制程式，點選python，並命名為e-puck_go_forward。<br/>10.更改程式碼後存儲，進行測試。<br/>11.測試完後，即完成。</span></p>
+<p><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment" target="_blank">Webots tutorial 2</a> </p>
+<p>在本教程中你將學到如何在一般環境下新增簡單物件，第一步驟你將新增一個能與你被景互動的球體。我們將處理幾個有關節點的概念，如他們各自代表的意義、如何新增他們，及如何加入關聯性等等.....，此外我們將學到如何設定物理量。</p>
+<p>數種節點將會被介紹，它們的細節都可以在手冊中找到，擁有節點圖表將有助於理解節點之間的關係。</p>
+<p>實心節點(solid node)代表鋼體，而這物體可忽略他的行變，在鋼體中任意兩點之距離不受外力影響改變距離，如機械指骨、輪子、桌子都是鋼體的代表。軟體(soft  bodies)及關節物體都不屬於鋼體，如繩索，輪胎，海綿或關節機械臂。但是，可以將一個鉸接的物體分解為幾個剛體。</p>
+<p>在webots物理引擎中是設計只用來模擬鋼體，在模擬設計中，最重要的一步為將各種實體拆解成不同的鋼體。</p>
+<p>第一步驟:將課程一<span>my_first_simulation.wbt檔案使用File / Save World As...另存成檔名為obstacles.wbt</span></p>
+<p>第二步驟:使用Delt將原本的背景移除，並使用<span>PROTO nodes (Webots Projects) / objects / floors / Floor (Solid)新增場景。</span></p>
+<p>第三步驟:<span>將新建場景之尺寸更改為1*1</span></p>
+<p>第四步驟:在最後的節點中依照Add/Bases nodes/solid路徑新增solid節點，展開solid節點並在solid節點中的children資料夾中新增shape，選擇<span>appearance並加入PBRAppearance</span></p>
+<p>1.在geometry中新增sphere</p>
+<p>2.展開<span>PBRAppearance，並將其mentalness及roughness尺寸分別更改成0、1</span></p>
+<p><span>3.在boundingObjectv新增sphere</span></p>
+<p><span>4.在physis中新增physis</span></p>
+<p><span>5.將translation 資料夾中的尺寸更改為0,0.2-0.2</span></p>
+<p><span>6.儲存</span></p>
+<p>7.結果顯示如下圖所示</p>
+<p><img alt="" height="323" src="https://s40723212.github.io/cad2019/images/tutorial%202-1.PNG" width="600"/></p>
+<p>第五步驟:在任意sphere節點中將radius及subdivision的尺寸更改成0.05和2</p>
+<p><img alt="" height="322" src="https://s40723212.github.io/cad2019/images/tutorial%202-2.PNG" width="600"/></p>
+<p>第六步驟:選擇第一個sphere(位於children中的子目錄)，檔案編輯器將會允許你輸入DEF</p>
+<p>1.在這個資料夾中輸入BALL_GEOMETRY</p>
+<p>2.選擇bounding0ject資料夾(位於第二個sphere節點中)並使用滑鼠右鍵中的Delt清空資料夾中的內容。</p>
+<p>3.在<span>bounding0ject資料夾中依照路徑Add/use/BALL_GEOMETRY操作。</span></p>
+<p><span>4.成果如下圖所示</span></p>
+<p><span><img alt="" height="338" src="https://s40723212.github.io/cad2019/images/tutorial%202-3.PNG" width="600"/></span></p>
+<p><span>Tutorial two (</span><span lang="en" tabindex="0">Physical properties Walls</span><span>)</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/cuIcd_KHkEk" width="560"></iframe></span></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-3-modification-of-the-environment" target="_blank">Webots tutorial 3</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/_mEsiBU9LPM" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 2的檔案，並另存為appearance.wbt。<br/>2.修改牆壁的外觀，在第一面牆的Appearance中的baseColor改成藍色.metalness改0.roughness改為0.5(若use-der機制有完成設定，其餘3面也會更著變動)。<br/>3.將球體新增紋路，在Appearance的baseColorMap中新增ImageTexture。<br/>4.在ImageTexture的url新增WEBOTS_HOME / projects / default / worlds / textures / red_brick_wall.jpg 路徑下的圖片。<br/>5.可使用View / Wireframe Rendering菜單項以線框模式查看仿真和恢復純渲染模式：View / Plain Rendering。<br/>6.查看坐標系：View / Optional Rendering / Show Coordinates System (Ctrl + F1)。<br/>7.查看距離傳感器的光線：View / Optional Rendering / Show DistanceSensor Rays (Ctrl + F10)。</p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-4-modification-of-the-environment" target="_blank">Webots tutorial 4</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/GlJ_y--w00A" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 3的檔案，並另存為collision_avoidance.wbt。<br/>2.新增一個控制程式碼檔案，並命名為e-puck_avoid_collision。<br/>3.進行自動迴避程式碼加入。<br/>4.複製程式碼並貼上，存儲後執行，能看到機器自動迴避。</p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-5-modification-of-the-environment" target="_blank">Webots tutorial 5</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/uM78CW-jbSg" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 4的檔案，並另存為compound_solid.wbt。<br/>2.新增啞鈴，先新增Solid，並def為dumbbell。<br/>3.在physics中新增Physics，接著在children中新增Group，並在Group中的children新增Shape兩個Transform。<br/>4.在Shape中的geometry新增cylinder，並將height改為0.1及radius改為0.01。<br/>5.接著在Transform中的children新增Shape，並在底下的geometry新增Sphere，然後將底下的radius改為0.03。<br/>6.將Transform底下的translation Y軸改為0.05。<br/>7.依相同方式完成另一個Transform，並將translation Y軸改為-0.05。<br/>8.接著使用def-use機制將Group def GO，並將boundimgObject新增use GO。<br/>9.接著調整啞鈴的物理性質，將phusics中的mass改為2及density改為-1.centerOfMass Y軸改為0.01。<br/>10.調整啞鈴位置，將rotation中的數值改為(1,0,0,1.5708)，且translation Y軸改為0.03。<br/>11.接著設定啞鈴的物理屬性，將Worldlnfo中的contactProperties新增ContactProperties，並將底下的coulombFriction改為0。<br/>12.接著將material1和material2改為dumbbell。<br/>13.設定完測試，即完成。</p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-6-modification-of-the-environment" target="_blank">Webots tutorial 6</a></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/Z6ASNLCNGLQ" width="560"></iframe></strong></p>
+<p>1.開啟Webots Tutorial 5的檔案，將箱子.機器.球.啞鈴刪除後，另存為4_wheels_robot.wbt。<br/>2.新增Robot，並將底下的physics加入Physics。<br/>3.在Robot下的children中新增Shape，並def BODY。<br/>4.將Robot下的boundingObject中新增use BODY。<br/>5.接著將Shape下的geometry新增Box，並將尺寸定為(0.1,0.05,0.2)。<br/>6.接著將Shape下的appearance新增PBRAppearance，並將顏色改為紅色.metalness改為0。<br/>7.在Robot下的children中新增Hingejoint(複製三個)，並在底下的jointParameter中新增HingeJointParameter。<br/>8.接著在Hingejoint中的device新增RotationalMotor，並且在Hingejoint中的endPoint新增Soild。<br/>9.將Soild def WHEEL1，並在底下的children新增Shape，且def WHEEL。<br/>10.在endPoint底下的physics加入Physics，並def WHEEL_PH。<br/>11.接著在Shape下的geometry中新增Cylinder，並在Shape下的appearance新增PBRAppearance。<br/>12.將appearance中的顏色改為綠色.metalness改為0。<br/>13.接著調整軸心位置，將geometry中的radius改為0.04.height改為0.02。<br/>14.將Hingejoint下的boundingObject新增use WHEEL，並將endPoint下的name改為wheel1。<br/>15.調整輪胎位置，將translation中的數值調為(0.06,0,0.05)，並將rotation的數值調為(0,0,1,1.5708)。<br/>16.接著將HingeJointParameter下的anchor中的數值調為(0.06,0,0.05)。<br/>17.將RotationalMotor中的name改為wheel1。<br/>18.接著將其餘三個輪胎的數值改動.名稱改動，並用use-der機制完成。<br/>19.新增感測器，在Robot下的children中新增DistanceSensor,並在DistanceSensor下的children新增Shape。<br/>20.接著在Shape下的geometry新增Box.appearance新增PBRAppearance，並將appearance下的metalness改為0.顏色改為藍色。<br/>21.接著更改大小,將geometry中的size數值改為(0.01,0.01,0.01)。<br/>22.接著更改感測器位置，將DistanceSensor下的translation中的數值改為(0.03,0,0.1)，並且將rotation中的數值改為(0,1,0,0.3)。<br/>23.接著複製感測器，將其translation中的數值改為(-0.03,0,0.1).rotation中的數值改為(0,1,0,-1.8)。<br/>24.將感測器的name改為ds_left及ds_right，並將調整Robot高度為(0,0.05,0)，完成設定後存儲。<br/>25.接著加入程式碼，選擇Python，並命名為4_wheels_collision_avoidance。<br/>26.複製程式碼貼上並存儲，並且將conteoller選用4_wheels_collision_avoidance。<br/>27.接著開始模擬，運作正常及完成。</p>
+<p><strong> </strong></p><h2>week15-16</h2>
 <h2>week17協同任務</h2>
 <table style="width: 548px; margin-left: auto; margin-right: auto;"><caption></caption>
 <tbody>
@@ -65,9 +111,7 @@
 <td style="width: 356.2px; height: 47px;">李建杰</td>
 </tr>
 </tbody>
-</table><h3>高永霖&amp;顏士勛</h3>
-<h3>洪維辰</h3>
-<h3>劉冠志</h3>
+</table><h3>Building a clean model tutorial Tranalation</h3>
 <h5><strong>Building the dynamic shapes</strong></h5>
 <h5><strong>建立動態形狀</strong></h5>
 <p><strong>If we want our robot to be <a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">dynamically enabled</a>, i.e. react to collisions, fall, etc., then we need to create/configure the shapes appropriately: a shape can be:</strong></p>
@@ -122,54 +166,7 @@
 <p><strong>然後，我們仍然必須將動態形狀配置為動態且可響應的。我們在形狀動力學屬性中執行此操作。首先選擇基本動態形狀（即robot_dyn），然後檢查“主體是可響應的”項。啟用前四個“本地可響應掩碼”標誌，並禁用後四個“本地可響應掩碼”標誌：對於連續的可響應鏈接不要彼此衝突非常重要。對於我們機器人中的第一個移動動態鏈接（即robot_link_dyn1），我們還啟用了“身體可響應”項，但是這次我們禁用了前4個“本地可響應掩碼”標誌，並啟用了後4個“本地可響應掩碼”標誌。我們對所有其他動態鏈接重複上述過程，同時始終交替使用Local Responsible Mask標誌：一旦定義了模型，則連續的機器人動態形狀在彼此交互時不會產生任何碰撞響應。嘗試始終以這樣一種構造結束：機器人的動態基礎和機器人的動態最後一個鏈接僅啟用了前4個“本地可響應掩碼”標誌，以便我們可以將機器人附加到移動平台，或附加一個抓取器連接到機器人的最後一個動態鏈接，而沒有動態碰撞干擾。</strong></p>
 <p><strong>Finally, we still need to tag our dynamic shapes as Body is dynamic. We do this also in the <a href="http://www.coppeliarobotics.com/helpFiles/en/shapeDynamicsProperties.htm">shape dynamics properties</a>. We can then enter the mass and inertia tensor properties manually, or have those values automatically computed (recommended) by clicking Compute mass &amp; inertia properties for selected convex shapes. Remember also <a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#masses">this</a> and <a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm#inertias">that</a> dynamic design considerations. This dynamic base of the robot is a special case: most of the time we want the base of the robot (i.e. robot_dyn) to be non-dynamic (i.e. static), otherwise, if used alone, the robot might fall during movement. But as soon as we attach the base of the robot to a mobile platform, we want the base to become dynamic (i.e. non-static). We do this by enabling the Set to dynamic if gets parent item, then disabling the Body is dynamic item. Now run the simulation: all dynamic shapes, except for the base of the robot, should fall. That attached visual shapes will follow their dynamic pendants.</strong></p>
 <p><strong>最後，我們仍然需要將動態形狀標記為“身體是動態的”。 我們也在形狀動力學屬性中執行此操作。 然後，我們可以手動輸入質量和慣性張量屬性，或者通過單擊“計算選定凸形的質量和慣性屬性”來自動計算（推薦）那些值。 還請記住這一點以及該動態設計注意事項。 機器人的這種動態基座是一種特殊情況：大多數時候，我們希望機器人的基座（即robot_dyn）是非動態的（即靜態），否則，如果單獨使用，則機器人可能會在運動過程中掉落。 但是，一旦我們將機器人的底座連接到移動平台上，我們就希望底座變得動態（即非靜態）。 我們通過啟用“如果獲取父項時設置為動態”項，然後禁用“主體為動態”項來做到這一點。 現在運行仿真：除了機器人的基座之外，所有動態形狀都應下降。 附加的視覺形狀將跟隨其動態吊墜。</strong></p>
-<h3>曾信誠</h3>
-<p>=======</p>
-<p><big><big><big>Week14</big></big></big></p>
-<p><a href="https://cyberbotics.com/doc/guide/tutorial-1-modification-of-the-environment" target="_blank">Webots tutorial 1</a></p>
-<p><span>本章節是讓你熟悉webot介面及操作，你將會創造一個虛擬空間包含了地板、牆壁， e-puck 機器人( e-puck robot )及 e-puck robot 控制系統。</span></p>
-<p><b>操作影片:</b></p>
-<p><b><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/9_wb_nkoGU8" width="560"></iframe></b></p>
-<p>1.開啟Webots，創建一個新的世界，並將檔名改為<span>my_first_simulation。<br/>2.更改場地尺寸及牆的高度。<br/>3.加入木箱，並更改木箱尺寸與初始高度。<br/>4.利用ctrl+C.ctrl+V複製出三個箱子，以shift+滑鼠左鍵拖移，完成後存儲。<br/>5.加入一台機器，加入後儲存，再按開始鍵，檢查機器是否作動。<br/>6.進行物理施壓測試，使用Alt+滑鼠左鍵拖移機器。<br/>7.使用Alt+滑鼠左鍵拖移木箱，會發現木箱無法拖移，需給予木箱重量才能拖移。<br/>8.更改效能。<br/>9.創建控制程式，點選python，並命名為e-puck_go_forward。<br/>10.更改程式碼後存儲，進行測試。<br/>11.測試完後，即完成。</span></p>
-<p><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment" target="_blank">Webots tutorial 2</a> </p>
-<p>在本教程中你將學到如何在一般環境下新增簡單物件，第一步驟你將新增一個能與你被景互動的球體。我們將處理幾個有關節點的概念，如他們各自代表的意義、如何新增他們，及如何加入關聯性等等.....，此外我們將學到如何設定物理量。</p>
-<p>數種節點將會被介紹，它們的細節都可以在手冊中找到，擁有節點圖表將有助於理解節點之間的關係。</p>
-<p>實心節點(solid node)代表鋼體，而這物體可忽略他的行變，在鋼體中任意兩點之距離不受外力影響改變距離，如機械指骨、輪子、桌子都是鋼體的代表。軟體(soft  bodies)及關節物體都不屬於鋼體，如繩索，輪胎，海綿或關節機械臂。但是，可以將一個鉸接的物體分解為幾個剛體。</p>
-<p>在webots物理引擎中是設計只用來模擬鋼體，在模擬設計中，最重要的一步為將各種實體拆解成不同的鋼體。</p>
-<p>第一步驟:將課程一<span>my_first_simulation.wbt檔案使用File / Save World As...另存成檔名為obstacles.wbt</span></p>
-<p>第二步驟:使用Delt將原本的背景移除，並使用<span>PROTO nodes (Webots Projects) / objects / floors / Floor (Solid)新增場景。</span></p>
-<p>第三步驟:<span>將新建場景之尺寸更改為1*1</span></p>
-<p>第四步驟:在最後的節點中依照Add/Bases nodes/solid路徑新增solid節點，展開solid節點並在solid節點中的children資料夾中新增shape，選擇<span>appearance並加入PBRAppearance</span></p>
-<p>1.在geometry中新增sphere</p>
-<p>2.展開<span>PBRAppearance，並將其mentalness及roughness尺寸分別更改成0、1</span></p>
-<p><span>3.在boundingObjectv新增sphere</span></p>
-<p><span>4.在physis中新增physis</span></p>
-<p><span>5.將translation 資料夾中的尺寸更改為0,0.2-0.2</span></p>
-<p><span>6.儲存</span></p>
-<p>7.結果顯示如下圖所示</p>
-<p><img alt="" height="323" src="https://s40723212.github.io/cad2019/images/tutorial%202-1.PNG" width="600"/></p>
-<p>第五步驟:在任意sphere節點中將radius及subdivision的尺寸更改成0.05和2</p>
-<p><img alt="" height="322" src="https://s40723212.github.io/cad2019/images/tutorial%202-2.PNG" width="600"/></p>
-<p>第六步驟:選擇第一個sphere(位於children中的子目錄)，檔案編輯器將會允許你輸入DEF</p>
-<p>1.在這個資料夾中輸入BALL_GEOMETRY</p>
-<p>2.選擇bounding0ject資料夾(位於第二個sphere節點中)並使用滑鼠右鍵中的Delt清空資料夾中的內容。</p>
-<p>3.在<span>bounding0ject資料夾中依照路徑Add/use/BALL_GEOMETRY操作。</span></p>
-<p><span>4.成果如下圖所示</span></p>
-<p><span><img alt="" height="338" src="https://s40723212.github.io/cad2019/images/tutorial%202-3.PNG" width="600"/></span></p>
-<p><span>Tutorial two (</span><span lang="en" tabindex="0">Physical properties Walls</span><span>)</span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/cuIcd_KHkEk" width="560"></iframe></span></p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-3-modification-of-the-environment" target="_blank">Webots tutorial 3</a></p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/_mEsiBU9LPM" width="560"></iframe></strong></p>
-<p>1.開啟Webots Tutorial 2的檔案，並另存為appearance.wbt。<br/>2.修改牆壁的外觀，在第一面牆的Appearance中的baseColor改成藍色.metalness改0.roughness改為0.5(若use-der機制有完成設定，其餘3面也會更著變動)。<br/>3.將球體新增紋路，在Appearance的baseColorMap中新增ImageTexture。<br/>4.在ImageTexture的url新增WEBOTS_HOME / projects / default / worlds / textures / red_brick_wall.jpg 路徑下的圖片。<br/>5.可使用View / Wireframe Rendering菜單項以線框模式查看仿真和恢復純渲染模式：View / Plain Rendering。<br/>6.查看坐標系：View / Optional Rendering / Show Coordinates System (Ctrl + F1)。<br/>7.查看距離傳感器的光線：View / Optional Rendering / Show DistanceSensor Rays (Ctrl + F10)。</p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-4-modification-of-the-environment" target="_blank">Webots tutorial 4</a></p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/GlJ_y--w00A" width="560"></iframe></strong></p>
-<p>1.開啟Webots Tutorial 3的檔案，並另存為collision_avoidance.wbt。<br/>2.新增一個控制程式碼檔案，並命名為e-puck_avoid_collision。<br/>3.進行自動迴避程式碼加入。<br/>4.複製程式碼並貼上，存儲後執行，能看到機器自動迴避。</p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-5-modification-of-the-environment" target="_blank">Webots tutorial 5</a></p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/uM78CW-jbSg" width="560"></iframe></strong></p>
-<p>1.開啟Webots Tutorial 4的檔案，並另存為compound_solid.wbt。<br/>2.新增啞鈴，先新增Solid，並def為dumbbell。<br/>3.在physics中新增Physics，接著在children中新增Group，並在Group中的children新增Shape兩個Transform。<br/>4.在Shape中的geometry新增cylinder，並將height改為0.1及radius改為0.01。<br/>5.接著在Transform中的children新增Shape，並在底下的geometry新增Sphere，然後將底下的radius改為0.03。<br/>6.將Transform底下的translation Y軸改為0.05。<br/>7.依相同方式完成另一個Transform，並將translation Y軸改為-0.05。<br/>8.接著使用def-use機制將Group def GO，並將boundimgObject新增use GO。<br/>9.接著調整啞鈴的物理性質，將phusics中的mass改為2及density改為-1.centerOfMass Y軸改為0.01。<br/>10.調整啞鈴位置，將rotation中的數值改為(1,0,0,1.5708)，且translation Y軸改為0.03。<br/>11.接著設定啞鈴的物理屬性，將Worldlnfo中的contactProperties新增ContactProperties，並將底下的coulombFriction改為0。<br/>12.接著將material1和material2改為dumbbell。<br/>13.設定完測試，即完成。</p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><a href="https://cyberbotics.com/doc/guide/tutorial-6-modification-of-the-environment" target="_blank">Webots tutorial 6</a></p>
-<p class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" dir="ltr"><strong><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/Z6ASNLCNGLQ" width="560"></iframe></strong></p>
-<p>1.開啟Webots Tutorial 5的檔案，將箱子.機器.球.啞鈴刪除後，另存為4_wheels_robot.wbt。<br/>2.新增Robot，並將底下的physics加入Physics。<br/>3.在Robot下的children中新增Shape，並def BODY。<br/>4.將Robot下的boundingObject中新增use BODY。<br/>5.接著將Shape下的geometry新增Box，並將尺寸定為(0.1,0.05,0.2)。<br/>6.接著將Shape下的appearance新增PBRAppearance，並將顏色改為紅色.metalness改為0。<br/>7.在Robot下的children中新增Hingejoint(複製三個)，並在底下的jointParameter中新增HingeJointParameter。<br/>8.接著在Hingejoint中的device新增RotationalMotor，並且在Hingejoint中的endPoint新增Soild。<br/>9.將Soild def WHEEL1，並在底下的children新增Shape，且def WHEEL。<br/>10.在endPoint底下的physics加入Physics，並def WHEEL_PH。<br/>11.接著在Shape下的geometry中新增Cylinder，並在Shape下的appearance新增PBRAppearance。<br/>12.將appearance中的顏色改為綠色.metalness改為0。<br/>13.接著調整軸心位置，將geometry中的radius改為0.04.height改為0.02。<br/>14.將Hingejoint下的boundingObject新增use WHEEL，並將endPoint下的name改為wheel1。<br/>15.調整輪胎位置，將translation中的數值調為(0.06,0,0.05)，並將rotation的數值調為(0,0,1,1.5708)。<br/>16.接著將HingeJointParameter下的anchor中的數值調為(0.06,0,0.05)。<br/>17.將RotationalMotor中的name改為wheel1。<br/>18.接著將其餘三個輪胎的數值改動.名稱改動，並用use-der機制完成。<br/>19.新增感測器，在Robot下的children中新增DistanceSensor,並在DistanceSensor下的children新增Shape。<br/>20.接著在Shape下的geometry新增Box.appearance新增PBRAppearance，並將appearance下的metalness改為0.顏色改為藍色。<br/>21.接著更改大小,將geometry中的size數值改為(0.01,0.01,0.01)。<br/>22.接著更改感測器位置，將DistanceSensor下的translation中的數值改為(0.03,0,0.1)，並且將rotation中的數值改為(0,1,0,0.3)。<br/>23.接著複製感測器，將其translation中的數值改為(-0.03,0,0.1).rotation中的數值改為(0,1,0,-1.8)。<br/>24.將感測器的name改為ds_left及ds_right，並將調整Robot高度為(0,0.05,0)，完成設定後存儲。<br/>25.接著加入程式碼，選擇Python，並命名為4_wheels_collision_avoidance。<br/>26.複製程式碼貼上並存儲，並且將conteoller選用4_wheels_collision_avoidance。<br/>27.接著開始模擬，運作正常及完成。</p>
-<h2>week18</h2>
+<h3>Webots translation</h3><h2>week18</h2>
 <p><big><big><big><big></big></big></big></big></p>
 <h1>繪圖軟體</h1>
 <p>solvespace</p>
@@ -1061,11 +1058,9 @@
 <p></p>
 <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h2>第五章 零件組合</h2>
-<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 7c4faafec90d523d03f318e510f7d5d2fe1a8a66</p>
 <p>NX 12 Drafting應用程序使您可以創建工程圖，視圖，幾何形狀，尺寸和起草製造所需的註釋以及對工業設計的理解。本章的目的是為設計人員/製圖員提供有關起草工具的足夠知識，以便創建其設計的基本圖紙。製圖應用程序支持工程製圖符合ANSI標準的模型。在解釋了起草申請的基礎之後，我們將逐步介紹起草一些先前創建的模型的方法。</p>
 <p>5-1總覽</p>
 <p>製圖應用程序旨在允許您制定和維護行業標準直接從3D模型或裝配零件製造工程圖。Drafting應用程序提供了一組2D繪圖，滿足2D中心設計和佈局要求的工具。可以製作獨立的2D工程圖。繪圖應用程序基於如下圖所示的實體模型創建視圖。通過繪圖，可以輕鬆地創建具有正交視圖，剖面圖，導入視圖，輔助視圖，尺寸和其他註釋。</p>
-<p><img alt="" height="191" src="https://s40723219.github.io/cad2019/images/1.PNG" width="284"/></p>
 <p>5.2建立草圖</p>
 <p>打開文件Arborpress_rack.prt<br/>從NX 12界面中，選擇File→Draft如圖所示或選擇Application選項然後選擇製圖</p>
 <p>可選擇圖紙的大小，以及投影第一角法或第三角法<img alt="" height="206" src="https://s40723219.github.io/cad2019/images/2.PNG" width="267"/><img alt="" height="249" src="https://s40723219.github.io/cad2019/images/3.png" width="70"/></p>
@@ -1090,8 +1085,7 @@
 <p><span><img alt="" height="303" src="https://s40723219.github.io/cad2019/images/27.png" width="101"/></span></p>
 <p><span><img alt="" height="163" src="https://s40723219.github.io/cad2019/images/31.png" width="173"/></span></p>
 <p><span>關閉註釋編輯器<br/>由於刻字的高度很小，因此我們將放大字符大小以及箭頭尺寸。<br/>右鍵單擊Lead並選擇Settings<br/>單擊刻字選項<br/>在參數部分，增加高度以使引線清晰<br/>單擊“行/箭頭”選項<br/>在格式部分，增加引線的長度<br/>現在，我們將添加其他尺寸和視圖。<br/>選擇插入→尺寸→徑向或在尺寸組<br/>在上視圖中單擊螺栓的圓以給出直徑尺寸<br/>單擊插入→視圖→基本視圖，然後單擊基本視圖圖標<br/>選擇等軸測視圖並將其放置在屏幕上的某個位置<br/>最終圖如下所示。記得保存。<br/></span></p>
-<p><span><img alt="" height="281" src="https://s40723219.github.io/cad2019/images/29.png" width="309"/></span></p>
-<h2>第六章 部件建模</h2>
+<p><span><img alt="" height="281" src="https://s40723219.github.io/cad2019/images/29.png" width="309"/></span></p><h2>第六章 部件建模</h2>
 <p>    每天，我們都會看到許多將組件組裝成一個模型的示例，例如自行車，汽車和計算機。 所有這些產品都是通過設計和製造單個零件，然後將它們裝配在一起。 創造它們的設計師有仔細計劃每個零件，使它們完美地配合在一起以執行所需的操作功能。</p>
 <p>    在本章中，您將學習在裝配體建模中使用的兩種方法。 我們會以葉輪組件為例練習裝配建模。 這個的某些部分前面的章節已經對程序集進行了建模。</p>
 <p>NX12裝配體是一個零件文件，其中包含各個零件。 它們被添加到零件文件中這樣一來，零件實際上就位於裝配體中並鏈接到原始零件。 這個無需為計算機中的各個部件創建單獨的內存空間。</p>
@@ -1364,9 +1358,7 @@
 <p><span>4.依照第一步驟完成Ø6*20之圓柱</span></p>
 <p><span>5.完成零件</span></p>
 <p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/23rPm6Es9BY" width="500"></iframe></p>
-<h2>第九章 製造</h2>
-<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; b773e515991875c890617d731d37aab4bd459713</p>
-<h1>About</h1>
+<h2>第九章 製造</h2><h1>About</h1>
 <p>=======</p>
 <p>開始模擬<span>:</span>你可以在下列運算器中找到解決方法如NX Nastran, NX Nastran Acoustic, NX Nastran Vibro-Acoustic, NX Nastran Design, Samcef, NX Thermal/Flow, Simcenter Electronic Systems Cooling, Simcenter Space Systems Thermal, NX Multiphysics, Simcenter Acoustics BEM, MSC Nastran, Ansys, Abaqus, 和LS-DYNA，除此之外你可以選擇你要分析的形式，在這在本教程中只有結構分析將會被NX Nastran Design取代顯示</p>
 <p> 選擇材料特性<span>:</span>這允許你改變材料特性並將其分配給模型，如果我們使用鋼材製作葉倫，我們可以使用如密度、帕鬆比等材料特性，這些材料特性利於實驗室保存供未來使用，或是可以從材料庫中檢索。</p>
