@@ -14,10 +14,6 @@
 <p>40723249 顏士勛<a href="https://s40723249.github.io/cad2019/content/index.html">[個人網站]</a></p>
 <p>40732331 黃政憲<a href="https://s40732331.github.io/cad2019/content/index.html">[個人網站]</a></p>
 <h2>week10-14</h2>
-<<<<<<< HEAD
-<h2>week15-16</h2>
-<h2>week17-18</h2>
-=======
 <p><big><big><big><strong>Week10</strong></big></big></big></p>
 <p><big><big><strong>正向<span>pull request與反向pull request之差異</span></strong></big></big></p>
 <p>正向  pull request:<br/>     指無權限之組員創建N<span>ew pull request後，將</span>更新資料推送到組別倉儲，再經由有權限組長或組員確認資料無誤後，同意合併。</p>
@@ -35,6 +31,7 @@
 <p><strong>Creo (Pro/E)<br/></strong><a href="https://s40723212.github.io/cad2019bg1/content/Creo%20(ProE)%E9%96%8B%E7%99%BC%E8%B5%B7%E6%BA%90.html">Creo (ProE)開發起源<br/></a><a href="https://s40723212.github.io/cad2019bg1/content/Creo%20(ProE)%E5%A5%97%E4%BB%B6%E5%AE%89%E8%A3%9D%E8%88%87%E8%A8%AD%E5%AE%9A%E6%B5%81%E7%A8%8B.html">Creo (ProE)套件安裝與設定流程</a></p>
 <p><img alt="" height="195" src="/images/ProE.jpg" width="225"/></p>
 <p><strong><a href="https://s40723212.github.io/cad2019bg1/content/%E5%90%84%E5%A5%97%E7%B9%AA%E5%9C%96%E8%BB%9F%E9%AB%94%E4%B9%8B%E5%B7%AE%E7%95%B0%E5%8F%8A%E7%89%B9%E9%BB%9E%E5%88%86%E6%9E%90.html">各套繪圖軟體之差異及特點分析</a></strong></p>
+<hr/>
 <p><big><big><big><strong>Week12</strong></big></big></big></p>
 <p><strong><a href="https://s40723212.github.io/cad2019bg1/content/NX12%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8A.html">NX12使用手冊重點整理</a></strong></p>
 <p><strong>Webots與Vrep介紹</strong></p>
@@ -45,10 +42,9 @@
 <p>Vrep是一款動力學仿真軟件，主要定位於機器人仿真建模領域，可以利用內嵌腳本、ROS節點、遠程API客戶端等實現分佈式的控制結構，是非常理想的機器人仿真建模的工具。控制器可以採用C/C++, Python, Java, Lua, Matlab, Octave or Urbi等語言實現。<br/><br/></p>
 <p><strong>V-rep bubbleRob外型設定<br/></strong></p>
 <p><strong>操作影片:<br/><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/gCgnIWXeeCw" width="560"></iframe></strong><strong><br/></strong><br/>1.開啟V-rep，點選新增球體(Menu-add-Primitive shape-Sphere)，並給予球體尺寸(X-size為0.2)<br/>2.點選crtl+space會開始模擬。<br/>3.利用crtl+C.crtl+V複製一樣的球，接著按crtl+space做碰撞測試，會看到兩顆球彈走。<br/>4.再來要將球體新增外觀及功能。<br/>5.點選球體，並點選平移，在Z軸上輸入0.02後，點選平移按鈕，會看到球體上升。<br/>(Sphere-Object/item shift-translation-Z 0.02-Translate selection)<br/>6.點選左邊場景結構中的球體，並改名為bubbleRob。<br/>7.新增感測器在球體上(Menu-add-Proximity sensor- Cone type)<br/>8.點選感測器，並點選旋轉，在Y軸及Z軸上輸入90，點選選轉扭，更改感測器角度。<br/>(Proximity sensor-Object/item rotate-Rotation-Y 90. Z 90.-Rotate selection)<br/>9.點選感測器，並點選平移，在X軸輸入0.1;Z軸輸入0.12,更改感測器位置。<br/>(Proximity sensor-Object/item shift-translation-X 0.1. Z 0.12.-Translate selection)<br/>10.雙擊左邊場景結構中的感測器，並點擊顯示體積參數(Show volume parameter )，將偏移量(Offest)改為0.005，角度(Angle)改為30，範圍(Range)改為0.15。<br/>11.點擊顯示檢測參數(Show detection parameters),並取消不允許檢測之項目(item Don't allow detections)。<br/>12.點選左邊場景結構中的感測器，並改名為bubbleRob_sensingNose。<br/>13.選取球體與感測，並點選編輯中的Make last selected object parent，使球體與感測器結合。<br/>14.再來將球體加上輪子，新增一個尺寸為0.08x0.08x0.02的圓柱，並設定圓柱的位置（0.05,0.1,0.04），完成後將其X軸方向選轉90度。<br/>15.將輪子命名為bubbleRob_leftWheel，並複製一個命名為bubbleRob_rightWheel，將Y軸座標側為-0.1。<br/>16.接著新增馬達(Menu bar-Add-Joint-Revolute)，將馬達位置調至輪子中心，並命名為bubbleRob_leftMotor。<br/>17.雙擊馬達，點選Show dynamics properties dialog，並勾選Motor enabled及Lock motor when target velocity is zero。<br/>18.以相同步驟完成bubbleRob_rightMotor。<br/>19.將馬達固定在輪子上，並將馬達固定在球體上。<br/>20.新增第三支撐點(直徑0.05的球體)，並平移球體X-0.07，完成後命名為bubbleRob_slider。<br/>21.新增傳動器(Menu bar-Add-Force sensor)，並設定位置X -0.07. Z 0.05.，完成後命名為bubbleRob_connection。<br/>22.將傳動器與支撐點連接，並跟主體連接，即完成外型設定。</p>
+<hr/>
 <p><big><big><big><strong>Week13</strong></big></big></big></p>
-<p><strong>13周組員報告影片<br/><br/></strong><strong>40723227 許博閔 <br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q_6HhBJ4k20" width="560"></iframe><br/></strong></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h2>week15-16</h2>
+<p><strong>13周組員報告影片<br/><br/></strong><strong>40723227 許博閔 <br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Q_6HhBJ4k20" width="560"></iframe><br/></strong></p><h2>week15-16</h2>
 <h2>week17協同任務</h2>
 <h3>高永霖&amp;顏士勛</h3>
 <h3>洪維辰</h3>
@@ -1350,7 +1346,7 @@
 <p><span>5.完成零件</span></p>
 <p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/23rPm6Es9BY" width="500"></iframe></p>
 <h2>第九章 製造</h2>
->>>>>>> b773e515991875c890617d731d37aab4bd459713
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; b773e515991875c890617d731d37aab4bd459713</p>
 <h1>About</h1>
 <p>=======</p>
 <p>開始模擬<span>:</span>你可以在下列運算器中找到解決方法如NX Nastran, NX Nastran Acoustic, NX Nastran Vibro-Acoustic, NX Nastran Design, Samcef, NX Thermal/Flow, Simcenter Electronic Systems Cooling, Simcenter Space Systems Thermal, NX Multiphysics, Simcenter Acoustics BEM, MSC Nastran, Ansys, Abaqus, 和LS-DYNA，除此之外你可以選擇你要分析的形式，在這在本教程中只有結構分析將會被NX Nastran Design取代顯示</p>
