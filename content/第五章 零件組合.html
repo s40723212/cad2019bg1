@@ -1,0 +1,227 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cad2019-bg1期末報告</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cad2019-bg1期末分組網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cad2019-bg1期末分組網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='weeks.html'>weeks</a><ul class='dropdown'><li><a href='week10-14.html'>week10-14</a><li><a href='week15-16.html'>week15-16</a><li class='has-children'><a href='week17協同任務.html'>week17協同任務</a><ul class='dropdown'><li><a href='Building a clean model tutorial Tranalation.html'>Building a clean model tutorial Tranalation</a><li><a href='Webots translation.html'>Webots translation</a></li></ul><li><a href='week18.html'>week18</a></li></ul><li class='has-children'><a href='繪圖軟體.html'>繪圖軟體</a><ul class='dropdown'><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='Solvespace功能表說明.html'>Solvespace功能表說明</a><li><a href='實作影片.html'>實作影片</a></li></ul><li class='has-children'><a href='Solidworks.html'>Solidworks</a><ul class='dropdown'><li><a href='Solidworks開發緣起.html'>Solidworks開發緣起</a><li><a href='Solidworks套件安裝與流程設定.html'>Solidworks套件安裝與流程設定</a></li></ul><li class='has-children'><a href='NX.html'>NX</a><ul class='dropdown'><li><a href='NX開發起源.html'>NX開發起源</a><li><a href='NX套件安裝與設定流程.html'>NX套件安裝與設定流程</a></li></ul><li class='has-children'><a href='Inventor.html'>Inventor</a><ul class='dropdown'><li><a href='Inventor開發起源.html'>Inventor開發起源</a><li><a href='Inventor套件安裝與設定流程.html'>Inventor套件安裝與設定流程</a></li></ul><li class='has-children'><a href='Creo (ProE).html'>Creo (ProE)</a><ul class='dropdown'><li><a href='Creo (ProE)開發起源.html'>Creo (ProE)開發起源</a><li><a href='Creo (ProE)套件安裝與設定流程.html'>Creo (ProE)套件安裝與設定流程</a></li></ul><li><a href='各套繪圖軟體之差異及特點分析.html'>各套繪圖軟體之差異及特點分析</a></li></ul><li class='has-children'><a href='NX12使用手冊.html'>NX12使用手冊</a><ul class='dropdown'><li><a href='第一章 簡介.html'>第一章 簡介</a><li><a href='第二章 入門教學.html'>第二章 入門教學</a><li><a href='第三章 2D草圖.html'>第三章 2D草圖</a><li><a href='第四章 三維建模.html'>第四章 三維建模</a><li><a href='第五章 零件組合.html'>第五章 零件組合</a><li><a href='第六章 部件建模.html'>第六章 部件建模</a><li><a href='第七章 曲面建模.html'>第七章 曲面建模</a><li><a href='第八章 有限元素分析.html'>第八章 有限元素分析</a><li><a href='第九章 製造.html'>第九章 製造</a></li></ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">第四章 三維建模 << <a href='第四章 三維建模.html'>Previous</a> <a href='第六章 部件建模.html'>Next</a> >> 第六章 部件建模<br /><h1>第五章 零件組合</h1>
+<p>NX 12 Drafting應用程序使您可以創建工程圖，視圖，幾何形狀，尺寸和起草製造所需的註釋以及對工業設計的理解。本章的目的是為設計人員/製圖員提供有關起草工具的足夠知識，以便創建其設計的基本圖紙。製圖應用程序支持工程製圖符合ANSI標準的模型。在解釋了起草申請的基礎之後，我們將逐步介紹起草一些先前創建的模型的方法。</p>
+<p>5-1總覽</p>
+<p>製圖應用程序旨在允許您制定和維護行業標準直接從3D模型或裝配零件製造工程圖。Drafting應用程序提供了一組2D繪圖，滿足2D中心設計和佈局要求的工具。可以製作獨立的2D工程圖。繪圖應用程序基於如下圖所示的實體模型創建視圖。通過繪圖，可以輕鬆地創建具有正交視圖，剖面圖，導入視圖，輔助視圖，尺寸和其他註釋。</p>
+<p>5.2建立草圖</p>
+<p>打開文件Arborpress_rack.prt<br/>從NX 12界面中，選擇File→Draft如圖所示或選擇Application選項然後選擇製圖</p>
+<p>可選擇圖紙的大小，以及投影第一角法或第三角法<img alt="" height="206" src="https://s40723219.github.io/cad2019/images/2.PNG" width="267"/><img alt="" height="249" src="https://s40723219.github.io/cad2019/images/3.png" width="70"/></p>
+<p>5.3尺寸</p>
+<p>現在，我們繼續為這些視圖創建尺寸。<br/>尺寸標註如下所述的兩種方式之一：<br/>選擇菜單→插入→尺寸<br/>不然就是<br/>單擊尺寸工具欄，如下圖所示</p>
+<p><img alt="" height="101" src="https://s40723219.github.io/cad2019/images/10.png" width="350"/></p>
+<p><span>單擊“點和邊”，移動鼠標，然後單擊適當的位置進行繪製</span></p>
+<p><span>5.4剖面圖</span></p>
+<p><span>為同一零件創建一個剖面圖，以顯示孔的深度和輪廓。</span></p>
+<p><span>選擇插入→視圖→截面或從視圖組中單擊視圖截面圖標<br/>在功能區欄中<br/>單擊基本視圖底部，如圖所示。這將顯示幻影<br/>帶有兩個箭頭標記的線表示剖面平面的方向（橙色虛線<br/>向上箭頭）。</span></p>
+<p><span><img alt="" height="80" src="https://s40723219.github.io/cad2019/images/16.png" width="335"/><br/>單擊視圖的中間，如圖所示。這將確定剖麵線的位置<br/>（剖面圖）<br/>現在，在視圖周圍移動光標以獲取剖面平面的方向。保持箭頭<br/>垂直向上指點並將截面圖拖動到基本視圖的底部</span></p>
+<p><span><img alt="" height="116" src="https://s40723219.github.io/cad2019/images/17.png" width="275"/></span></p>
+<p><span>5.5產品和製造信息</span></p>
+<p><span>產品和製造信息（PMI）是NX中的重要應用之一，提供用於在3D環境中記錄產品的註釋工具。 PMI申請包括一個全面的3D註釋環境，允許設計團隊共享細節例如幾何尺寸和公差（GD＆T），表面光潔度，焊接信息，材料規格、評論、政府安全訊息或專有訊息，等直接添加到3D模型中。 PMI符合行業標準的3D產品定義，從事協作項目的產品團隊將使用3D模型作為合法的完整記錄產品和製造信息的方法。</span></p>
+<p><span>5.6例子</span></p>
+<p><span>打開模型Impeller_hexa-bolt.prt<br/>選擇文件→起草或在應用程序選項卡中選擇起草<br/>在圖紙窗口中，選擇圖紙E-34 X 44並將比例值更改為8.0：1.0<br/>點擊確定<br/>選擇插入→視圖→基本視圖或單擊基本視圖圖標<br/>通過重複添加前視圖<br/>最後一個示例中說明的過程<br/>添加包括右視圖在內的正交視圖<br/>視圖和頂視圖<br/>選擇首選項→起草<br/>取消選中顯示邊框下的框<br/>查看標籤<br/>屏幕將具有以下三個視圖。</span></p>
+<p><span><img alt="" height="166" src="https://s40723219.github.io/cad2019/images/23.png" width="146"/><br/>為了可視化隱藏線，<br/>選擇首選項→草圖→查看，或者</span><span><br/>選擇視圖，單擊鼠標右鍵，然後選擇“設置”，如下所示<br/>將彈出一個窗口，其中包含與視圖有關的各種選項。<br/>單擊隱藏線選項卡<br/>如下所示，將“進程隱藏線”更改為“虛線”，然後單擊“確定”。</span></p>
+<p><span><img alt="" height="187" src="https://s40723219.github.io/cad2019/images/24.png" width="364"/></span></p>
+<p><span>您可以看到隱藏線，如右圖所示<img alt="" height="143" src="https://s40723219.github.io/cad2019/images/30.png" width="157"/><br/><br/>現在，我們將繼續進行尺寸標註。<br/>選擇插入→尺寸→線性或<br/>點擊“線性尺寸”圖標<br/>尺寸組<br/>給出所有距離的垂直尺寸<br/>如下圖所示</span></p>
+<p><span><img alt="" height="157" src="https://s40723219.github.io/cad2019/images/26.png" width="204"/></span></p>
+<p><span>對於線程，我們將使用引導線。<br/>單擊工具欄中顯示的註釋圖標<br/>在打開的註釋窗口中，輸入以下內容<br/>文本。您可以在上找到O和度數符號<br/>符號選項卡<br/>右螺紋直徑0.20 x 1.5<br/>節距0.05，角度60度<br/>單擊側視圖中的螺紋軸，</span><span>按住鼠標並將“引線”行拖動到視圖。放開鼠標，然後再次單擊以放置文本</span></p>
+<p><span><img alt="" height="303" src="https://s40723219.github.io/cad2019/images/27.png" width="101"/></span></p>
+<p><span><img alt="" height="163" src="https://s40723219.github.io/cad2019/images/31.png" width="173"/></span></p>
+<p><span>關閉註釋編輯器<br/>由於刻字的高度很小，因此我們將放大字符大小以及箭頭尺寸。<br/>右鍵單擊Lead並選擇Settings<br/>單擊刻字選項<br/>在參數部分，增加高度以使引線清晰<br/>單擊“行/箭頭”選項<br/>在格式部分，增加引線的長度<br/>現在，我們將添加其他尺寸和視圖。<br/>選擇插入→尺寸→徑向或在尺寸組<br/>在上視圖中單擊螺栓的圓以給出直徑尺寸<br/>單擊插入→視圖→基本視圖，然後單擊基本視圖圖標<br/>選擇等軸測視圖並將其放置在屏幕上的某個位置<br/>最終圖如下所示。記得保存。<br/></span></p>
+<p><span><img alt="" height="281" src="https://s40723219.github.io/cad2019/images/29.png" width="309"/></span></p><br />第四章 三維建模 << <a href='第四章 三維建模.html'>Previous</a> <a href='第六章 部件建模.html'>Next</a> >> 第六章 部件建模</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
